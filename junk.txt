@@ -1,0 +1,21 @@
+--Code I didn't wanna delete just in case but didn't want as comments cluttering my program. 
+
+Thing that went through spotify Songs
+
+# while i < totalSongs:
+#     modifier = 0
+#     if i > 31:
+#         modifier = -2
+#     # actions.move_to_element(browser.find_elements(By.CLASS_NAME, "iCQtmPqY0QvkumAOuCjr")[i]).perform()
+#     # print(browser.find_element(By.XPATH, r'/html/body/div[3]/div/div[2]/div[3]/div[1]/div[2]/div[2]/div/div/div[2]/main/div[1]/section/div[2]/div[3]/div/div[2]/div[2]/div[1]/div/div[2]/div/a/div').text)
+#     # print(browser.find_element(By.XPATH, r'/html/body/div[3]/div/div[2]/div[3]/div[1]/div[2]/div[2]/div/div/div[2]/main/div[1]/section/div[2]/div[3]/div/div[2]/div[2]/div['+ str(i + modifier + 1) +']/div/div[2]/div/a/div').text)
+#     print(browser.find_elements(By.CLASS_NAME, "iCQtmPqY0QvkumAOuCjr")[i].find_element(By.XPATH, "..").text.split("\n")[0] + " by " + browser.find_elements(By.CLASS_NAME, "iCQtmPqY0QvkumAOuCjr")[i].find_element(By.XPATH, "..").text.split("\n")[-1]) #Works!
+#     song = {}
+#     song["name"] = browser.find_elements(By.CLASS_NAME, "iCQtmPqY0QvkumAOuCjr")[i].find_element(By.XPATH, "..").text.split("\n")[0]
+#     song["arstist"] = browser.find_elements(By.CLASS_NAME, "iCQtmPqY0QvkumAOuCjr")[i].find_element(By.XPATH, "..").text.split("\n")[-1]
+#     songs.append(song)
+#     if(len(browser.find_elements(By.CLASS_NAME, "iCQtmPqY0QvkumAOuCjr")) != totalSongs): # As spotify scrolls down the page, more songs are loaded, if it loads more songs change the number of songs that should be scrolled to. 
+#         totalSongs = len(browser.find_elements(By.CLASS_NAME, "iCQtmPqY0QvkumAOuCjr"))
+#     # print(len(browser.find_elements(By.CLASS_NAME, "iCQtmPqY0QvkumAOuCjr")))
+#     # print(i)
+#     i += 1
