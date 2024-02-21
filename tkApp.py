@@ -2,6 +2,7 @@ import tkinter as Tk
 # from tkinter import *
 from PIL import ImageTk, Image
 from testajr import getSongs
+from getImages import downloadIcons
 from selenium.common.exceptions import WebDriverException
 
 window = Tk.Tk()
@@ -129,7 +130,8 @@ for i in range(5):
     print(button.winfo_height())
     button.place(x=0, y=button.winfo_height() * i)
     button.place()
-    button.bind("<Button-1>", lambda event, index=i: printParent(event, index))
+    button.bind("<Button-1>", lambda event, index=i: print(playlists))
+    # button.bind("<Button-1>", lambda event, index=i: printParent(event, index))
     buttons.append(button)
 
 window.update() # Needs to be called so that you can get winfo_height() of widgets. \/
